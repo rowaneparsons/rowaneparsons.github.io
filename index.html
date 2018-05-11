@@ -3,19 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><\/script>')</script>
-
-
     <title>Row's Sews.</title>
+
+    <!-- My Imports -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!-- My CSS -->
+    <link href="src/css/product.css" rel="stylesheet">
+    <link href="src/css/mycarousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/mycss.css">
+
+    <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet'>
-    <link href="src/css/product.css" rel="stylesheet">
+
     <style>
     body {
         font-family: 'EB Garamond';font-size: 22px;
@@ -24,75 +29,70 @@
 </head>
 
 <body>
-
-<div>
-    <div ng-include="'navBar.html'"></div>
-</div>
-
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal" style="font-family: 'Rochester';">Row's Sews</h1>
-        <p class="lead font-weight-normal">I'm Rowan and I'm super duper at sewing and stuff. Have a look at what I
-            can do.</p>
-        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    <div>
+        <div ng-include="'navBar.html'"></div>
     </div>
-</div>
 
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color:#abf2d1;">
-    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">Quilts</h2>
-            <p class="lead">I make bad ass quilts that look all professional.</p>
-            <a class="btn btn-outline-secondary" href="quilts.html">Go</a>
-        </div>
-        <div class="bg-light box-shadow mx-auto"
-             style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.2;">
-            <img src="src/imgs/quilt.jpg" alt="Quilts"
-                 style="max-width: 80%;max-height: 80%;">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal" style="font-family: 'Rochester';">Row's Sews</h1>
+            <p class="lead font-weight-normal">I'm Rowan and I'm super duper at sewing and stuff. Have a look at what I
+                can do.</p>
+            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         </div>
     </div>
-</div>
 
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color:#7ef24b;">
-    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">Sleepsuit Monsters</h2>
-            <p class="lead">I make scaaaaaary monsters from baby sleepsuits.</p>
-        </div>
-        <div class="bg-dark box-shadow mx-auto"
-             style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.5;">
-            <img src="src/imgs/monster.jpg" alt="Sleepsuit Monster" style="max-width: 50%;max-height: 20%;">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color:#abf2d1;">
+        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Quilts</h2>
+                <p class="lead">I make bad ass quilts that look all professional.</p>
+                <a class="btn btn-outline-secondary" href="quilts.html">Go</a>
+            </div>
+            <div class="bg-light box-shadow mx-auto"
+                 style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.2;">
+                <img src="src/imgs/quilt.jpg" alt="Quilts"
+                     style="max-width: 80%;max-height: 80%;">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-         style="background-color:#f7ea8c;">
-        <div class="my-3 p-3">
-            <h2 class="display-5">General Mending</h2>
-            <p class="lead">I can sew anything. Look at this.</p>
-        </div>
-        <div class="bg-dark box-shadow mx-auto" style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.5;">
-            <img src="src/imgs/sewing.jpg" alt="Sewing" style="max-width: 100%;max-height: 100%;">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color:#7ef24b;">
+        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Sleepsuit Monsters</h2>
+                <p class="lead">I make scaaaaaary monsters from baby sleepsuits.</p>
+            </div>
+            <div class="bg-dark box-shadow mx-auto"
+                 style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.5;">
+                <img src="src/imgs/monster.jpg" alt="Sleepsuit Monster" style="max-width: 50%;max-height: 20%;">
+            </div>
         </div>
     </div>
-    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color:#edb8e3;">
-        <div class="my-3 py-3">
-            <h2 class="display-5">HR Administration</h2>
-            <p class="lead">I can even help out with your Human Resources administration.</p>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+             style="background-color:#f7ea8c;">
+            <div class="my-3 p-3">
+                <h2 class="display-5">General Mending</h2>
+                <p class="lead">I can sew anything. Look at this.</p>
+            </div>
+            <div class="bg-dark box-shadow mx-auto" style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.5;">
+                <img src="src/imgs/sewing.jpg" alt="Sewing" style="max-width: 100%;max-height: 100%;">
+            </div>
         </div>
-        <div class="bg-light box-shadow mx-auto" style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.5;">
-            <img src="src/imgs/rowan.jpg" alt="Rowan" style="max-width: 100%;max-height: 100%;">
+        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color:#edb8e3;">
+            <div class="my-3 py-3">
+                <h2 class="display-5">HR Administration</h2>
+                <p class="lead">I can even help out with your Human Resources administration.</p>
+            </div>
+            <div class="bg-light box-shadow mx-auto" style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.5;">
+                <img src="src/imgs/rowan.jpg" alt="Rowan" style="max-width: 100%;max-height: 100%;">
+            </div>
         </div>
     </div>
-</div>
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 <footer>
