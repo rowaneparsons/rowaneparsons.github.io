@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -5,6 +7,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
     <title>Row's Sews.</title>
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet'>
@@ -24,7 +28,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
         </a>
         <a class="py-2 d-none d-md-inline-block" href="#">Rowan</a>
-        <a class="py-2 d-none d-md-inline-block" href="src/html/quilts.html">Quilts</a>
+        <a class="py-2 d-none d-md-inline-block" href="quilts.html">Quilts</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Monsters</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Sewing</a>
         <a class="py-2 d-none d-md-inline-block" href="#">HR Admin</a>
@@ -46,7 +50,7 @@
         <div class="my-3 py-3">
             <h2 class="display-5">Quilts</h2>
             <p class="lead">I make bad ass quilts that look all professional.</p>
-            <a class="btn btn-outline-secondary" href="/src/html/quilts.html">Go</a>
+            <a class="btn btn-outline-secondary" href="quilts.html">Go</a>
         </div>
         <div class="bg-light box-shadow mx-auto"
              style="max-width: 80%;max-height: 80%; border-radius: 21px 21px 0 0; padding: 25px 25px 25px 25px; opacity: 0.2;">
@@ -97,3 +101,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
+
+<footer>
+    <div ng-include="'footer.html'"></div>
+</footer>
+</html>
