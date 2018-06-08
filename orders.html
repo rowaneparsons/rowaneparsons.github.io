@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Row's Monsters.</title>
+    <title>Send your info to me.</title>
 
     <!-- My Imports -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 order-md-1">
-                    <h4 class="mb-3">Billing address</h4>
+                    <h4 class="mb-3">Your address details.</h4>
                     <form class="needs-validation" novalidate>
                         <div class="row">
                             <div class="col-md-6 mb-3">
@@ -69,59 +69,11 @@
                                 Please enter a valid email address for updates.
                             </div>
                         </div>
-
-                        <div class="mb-3">
-                            <label for="address">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                            <div class="invalid-feedback">
-                                Please enter your address.
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-5 mb-3">
-                                <label for="country">Country</label>
-                                <select class="custom-select d-block w-100" id="country" required>
-                                    <option value="">Choose...</option>
-                                    <option>United Kingdom</option>
-                                    <option>Wales</option>
-                                    <option>Scotland</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid country.
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="county">County</label>
-                                <input type="text" class="form-control" id="county" placeholder="eg Cambridgeshire"
-                                       required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid county.
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="postcode">Post Code</label>
-                                <input type="text" class="form-control" id="postcode" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Post code required.
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="mb-4">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="save-info">
-                            <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                        </div>
                         <hr class="mb-4">
                         <div class="mb-3">
-                            <label for="submissiontext">Submission Text</label>
-                            <input type="text" class="form-control" id="submissiontext" placeholder="Enter Text Here"
-                                   required>
+                            <label>Submission Text</label>
+                            <textarea type="text" class="form-control" id="submissiontext" placeholder="Enter Text Here"
+                                   required rows="5"/> </textarea>
                             <div class="invalid-feedback">
                                 Please enter your note here.
                             </div>
